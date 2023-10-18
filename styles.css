@@ -1,0 +1,55 @@
+h1,
+h2 {
+    text-align: center;
+    color: #0F2C59;
+}
+
+img {
+    width: 200px;
+    /* border: 5px solid; */
+    padding: .5%;
+    border: 7px ridge #0F2C59;
+    float: right;
+}
+
+a {
+    color: black;
+}
+
+* {
+    background-color: #DDE6ED;
+    font-family: sans-serif;
+}
+
+#myself {
+    font-size: large;
+    width: 2150px;
+    height: 100px;
+    text-align: center;
+    background-color: #0F2C59;
+    color: #DAFFFB;
+
+}
+
+#contact {
+    width: 1500px;
+
+}
+
+#table1 {
+    text-align: center;
+    border: .5px ridge;
+    text-align: center;
+    padding: .3%;
+    background-color: #526D82;
+}
+
+hr {
+    border: .3px dashed black;
+}
+
+a:hover,
+button:hover {
+    color: #DAFFFB;
+    background-color: black;
+}
