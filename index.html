@@ -1,161 +1,242 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Project 1</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="New Doc 2019-11-03 22.25.12_1(2).jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Himanshu Porfolio!!</h1>
-        <a href="http://www.google.com/" title="Go to Google" target="_blank"><img
-                src="New Doc 2019-11-03 22.25.12_1(2).jpg"></a>
+        <nav>
+            <img src="asset/carepy_logo-1.svg" alt="">
+            <ul>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#portfolio-loc">Skills</a></li>
+                <li><a href="#contact-loc">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="search">
+                <i class="ri-search-fill"></i>
+            </div>
+        </nav>
+        <div class="landing">
+            <div class="intro">
+                <h3>I'M <Span>Himanshu</Span><br>Java Developer & <br> Web Developer </h3>
+                <button id="contactMe" onclick="location.href='https://wa.me/7717702731'">Contact Me</button>
+                <!-- <button><a href="https://wa.me/7717702731" >Contact Me</a></button> -->
+                <button id="download" onclick="location.href='./asset/Himanshu Resume.pdf'" download="Download">Resume</button>
+                <!-- <button id="download"> <a href="./asset/Himanshu's Resume.pdf" download="Download" a>Resume</button> -->
 
-        <p id="myself">MCA graduate with a passion for solving complex problems, strong programming skills and a keen
-            interest in staying up-to-date with emerging technologies. Committed to delivering high-quality work
-            and contributing effectively to collaborative projects. "Driven , Skilled, and Eager to Make an impact.
-        </p>
+            </div>
+            <div class="socials">
+                <div class="line"></div>
+                <i class="ri-facebook-circle-fill"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-linkedin-fill"></i>
+                <i class="ri-whatsapp-fill" ></i>
+                <i class="ri-instagram-fill"></i>
+            </div>
+        </div>
     </header>
-    <h2>Contact Information!</h2>
-    <table id="contact">
-        <tr>
-            <th>Phone No.:-7717702731</th>
-            <th>Email:-Amulya.hu@outlook.com</th>
-        </tr>
-        <tr>
-            <th>Adress:-F74 Kusai Colony Doranda Ranchi</th>
-            <th>Linkdin:-<a href="https://www.linkedin.com/in/himanshuamulyaupadhyay"
-                    target="_blank">linkedin.com/in/himanshuamulyaupadhyay</a>
-            </th>
-        </tr>
-        <tr>
-            <th>GitHub:-<a href="https://github.com/RyzenHim" target="_blank">github.com/RyzenHim</a></th>
-            <th>Instagram:-<a href="//instagram.com/amulya.hu?igshid=YTQwZjQ0NmI0OA==" target="_blank">Amulya.hu</a>
-            </th>
-        </tr>
-    </table>
-    <hr>
-    <div>
-        <h2>Here is the table containing my education details.</h1>
+    <section class="about">
+        <h1>About</h1>
+        <div class="description">
+            <div class="line"></div>
+            <p>Hi I'm MCA graduate with a passion for solving complex problems, strong programming skills and a keen
+                interest in staying up-to-date with emerging technologies. Committed to delivering high-quality work
+                and contributing effectively to collaborative projects.<br><span>"Driven , Skilled, and Eager to Make an impact"</span> </p>
+        </div>
+    </section>
+    <section class="skills">
+        <h1>My Skills</h1>
+        <div class="cards">
+            <div class="skill-card">
+                <img src="asset/python.svg" alt="">
+                <h2>Python</h2>
+            </div>
+            <!-- <div class="skill-card">
+                <img src="asset/amazon-web-services.svg" alt="">
+                <h2>AWS</h2>
+            </div> -->
+            <div class="skill-card">
+                <img src="asset/css.svg" alt="">
+                <h2>CSS</h2>
+            </div>
+            <!-- <div class="skill-card">
+                <img src="asset/django.svg" alt="">
+                <h2>Django</h2>
+            </div> -->
+            <!-- <div class="skill-card">
+                <img src="asset/flask.svg" alt="">
+                <h2>Flask</h2>
+            </div> -->
+            <!-- <div class="skill-card">
+                <img src="asset/flutter.svg" alt="">
+                <h2>Flutter</h2>
+            </div> -->
+            <div class="skill-card">
+                <img src="asset/git.svg" alt="">
+                <h2>GIT</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/html.svg" alt="">
+                <h2>HTML</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/js.svg" alt="">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/linux-96.png" alt="">
+                <h2>Linux</h2>
+            </div>
+            <!-- <div class="skill-card">
+                <img src="asset/mongodb.svg" alt="">
+                <h2>MongoDB</h2>
+            </div> -->
+            <div class="skill-card">
+                <img src="asset/mysql.svg" alt="">
+                <h2>MySQL</h2>
+            </div>
+            <!-- <div class="skill-card">
+                <img src="asset/nodejs.svg" alt="">
+                <h2>NodeJS</h2>
+            </div> -->
+            <div class="skill-card">
+                <img src="asset/react.svg" alt="">
+                <h2>ReactJS</h2>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio-loc">
+        <h1>Portfolio</h1>
+        <div class="portfolio-cards">
+            <div class="portfolio-card">
+                <img src="asset/images/aperture-vintage-HF1IO60tQdc-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <h3>Amazon</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                    <button>See More -></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/images/martin-martz-3_x1FRGAEwY-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <h3>Facebook</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                    <button>See More -></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/images/vimal-s-bVplevb7Bhk-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <h3>Google</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                    <button>See More -></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/images/warren-umoh-K7M7dQO-HrA-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <h3>Twitter</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                    <button>See More -></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/images/warren-umoh-pnMjGMOs2Xw-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <h3>LinkedIn</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                    <button>See More -></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="asset/images/warren-umoh-VL12rhr4mi0-unsplash.jpg" alt="">
+                <div class="overlay">
+                    <h3>YouTube</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                    <button>See More -></button>
+                </div>
+            </div>
+        </div>
+        <Button>View More</Button>
+    </section>
+    <section class="experience">
+        <div class="darker-div"></div>
+        <h1>Projects</h1>
+        <div class="lighter-div">
+            <div class="exp">
+                <h2>Online Examination system</h2>
+                <div class="exp-desc">
+                    <!-- <h3>Scottech, Toledo</h3> -->
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
+                        dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
+                        voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
+                        Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
+                        dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
+                        voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
+                        Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?</p> -->
+               <ul>
+                    <li>It's user friendly platform that provides students with seamless access to wide range of exam. It's features such as timed tests, automatic grading , and performance analytics, enhancing overall examination process.</li>
+                    <li>GUI Tools:- HTML /Java Script based Web Interface</li>
+                    <li>Languages :- PHP , JavaScript, HTML/CSS</li>
+               </ul>
+               
+               
+               
+               
+                    </div>
+            
+            </div>
+            <div class="exp">
+                <h2>Mask detection using machine learning</h2>
+                <div class="exp-desc">
+                    <!-- <h3>Scottech, Toledo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
+                        dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
+                        voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
+                        Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
+                        dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
+                        voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
+                        Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?</p>
+                 -->
+                 <ul>
+                    <li>This project addressed a critical need during the COVID-19 pandemic by automating the process of identifying individuals wearing or not wearing face masks in public spaces.</li>
+                    <li>Modules used :- Tensor flow , Keras</li>
+               
+               </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-me" id="contact-loc">
+        <h1>Contact Me</h1>
+        <div class="contact">
+            <div class="contact-card">
+                <i class="ri-mail-fill" ></i>
+                    <p><a href="mailto:Amulya.hu@outlook.com?cc=himanshuupadhyay210@gmail.com&subject=Reg:">Send  Mail</a></p>
 
-            <table id="table1">
-
-                <tr>
-                    <th>Serial no.</th>
-                    <th>Course</th>
-                    <th>Year</th>
-                    <th>Board</th>
-                </tr>
-
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Matriculation</td>
-                        <td>2015</td>
-                        <td>ICSE</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Intermediate</td>
-                        <td>2018</td>
-                        <td>JAC</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Under Graduation</td>
-                        <td>2018-2021</td>
-                        <td>Ranchi University</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Post Graduation</td>
-                        <td>2021-2023</td>
-                        <td>Ranchi University</td>
-                    </tr>
-                </tbody>
-
-
-
-            </table>
-
-            <hr>
-
-    </div>
-    <div>
-        <h2>More About me.</h2>
-        <list>
-            <ul>
-                <li>Primary Skills</li>
-                <ol>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>JAVA</li>
-                    <li>Python</li>
-                </ol>
-            </ul>
-            <ul>
-                <li>Personality Skills</li>
-                <ol>
-                    <li>Optimistic</li>
-                    <li>Quick Learner</li>
-                    <li>Good Communication Skill</li>
-                    <li>Team Player</li>
-                </ol>
-            </ul>
-            <ul>
-                <li>Other Skills</li>
-                <ol>
-                    <li>Adobe Photoshop</li>
-                    <li>Ms Excel</li>
-                    <li>Ms Word</li>
-                    <li>Power point</li>
-                    <li>Adobe After Effects</li>
-                </ol>
-            </ul>
-            <ul>
-                <li>Languages</li>
-                <ol>
-                    <li>English</li>
-                    <li>Hindi</li>
-                </ol>
-            </ul>
-            <ul>
-                <li>Interest</li>
-                <ol>
-                    <li>Music</li>
-                    <li>VideoGames</li>
-                    <li>Cricket</li>
-                    <li>Travelling</li>
-                </ol>
-            </ul>
-        </list>
-
-        <hr>
-    </div>
-    <div>
-        <form>
-            <label for="search"><b>Search</b></label>
-            <input type="text" placeholder="Search" id="search">
-
-            <button type="button" id="button">Search</button>
-
-        </form>
-        <form action="/my/link/location" method="get">
-            <input type="submit" value="Go to my link location" name="Submit" id="frm1_submit" />
-        </form>
-        <a href="http://www.google.com/">
-            <button>Visit Google</button>
-        </a>
-        <a href="http://www.google.com/">
-            <input type="button" value="Visit Google" />
-        </a>
-    </div>
-    <a href="https://www.google.com/search?q=html" title="Go to Google HTML section">Link to search HTML on
-        google</a>
-    <script href=""></script>
+                <!-- <button id="linkdin" type="button" onclick="location.href='https://www.linkedin.com/in/himanshuamulyaupadhyay'">LinkedIn</button> -->
+                <!-- <p><a href="https://www.linkedin.com/in/himanshuamulyaupadhyay">LinkedIn</a></p> -->
+            </div>
+            <div class="contact-card">
+                <i class="ri-phone-line"></i>
+                <p>7717702731</p>
+            </div>
+            <div class="contact-card">
+                <i class="ri-map-pin-3-line"></i>
+                <p>Ranchi, India</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
